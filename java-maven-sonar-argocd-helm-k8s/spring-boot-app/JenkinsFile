@@ -29,7 +29,7 @@ pipeline {
 
         stage('Static Code Analysis') {
             environment {
-                SONAR_URL = "http://34.201.116.83:9000"
+                SONAR_URL = "http://54.145.69.147:9000"
             }
 
             steps {
@@ -92,7 +92,7 @@ pipeline {
                 ]) {
 
                     sh '''
-                        git config user.email "pankajsisodia02@mail.com"
+                        git config user.email "pankaj.pbt.kumar@mail.com"
                         git config user.name "pankajpbtkumar082"
 
                         sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" \
